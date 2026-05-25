@@ -1,0 +1,1 @@
+All screenshots placed in Screenshots folder

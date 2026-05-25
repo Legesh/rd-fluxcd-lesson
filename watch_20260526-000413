@@ -1,0 +1,7 @@
+NAME            REVISION                SUSPENDED       READY   MESSAGE                                                                                                     
+app-dev         main@sha1:94fdebb5      False           True    Applied revision: main@sha1:94fdebb5                                                                        
+app-prod        main@sha1:94fdebb5      False           True    Applied revision: main@sha1:94fdebb5                                                                        
+flux-system     main@sha1:94fdebb5      False           True    Applied revision: main@sha1:94fdebb5                                                                        
+                                                                                                                                                                            
+                                                                                                                                                                            
+                                                                                                                                                                            
