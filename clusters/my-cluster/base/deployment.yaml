@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: couple-games
+  labels:
+    app: couple-games
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: couple-games
+  template:
+    metadata:
+      labels:
+        app: couple-games
+    spec:
+      containers:
+        - name: couple-games
+          image: legesh/sdk-client:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10

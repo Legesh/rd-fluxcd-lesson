@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Тільки Flux system + Kustomization CR для app-dev/app-prod.
+# НЕ додавайте сюди base/ або overlays/ — інакше Service couple-games
+# застосується без namespace і flux-system зависне в False.
+resources:
+  - flux-system
+  - app-dev.yaml
+  - app-prod.yaml
