@@ -8,3 +8,4 @@ resources:
   - flux-system
   - app-dev.yaml
   - app-prod.yaml
+  - dragonfly-operator.yaml
