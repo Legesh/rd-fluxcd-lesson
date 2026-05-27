@@ -4,7 +4,7 @@ metadata:
   name: couple-games
 spec:
   rules:
-    - host: app.local
+    - host: app.staging.local
       http:
         paths:
           - path: /

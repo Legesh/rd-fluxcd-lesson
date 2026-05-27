@@ -1,0 +1,10 @@
+# Staging: single replica, no HA (dev-preset)
+apiVersion: dragonflydb.io/v1alpha1
+kind: Dragonfly
+metadata:
+  name: dragonfly
+  labels:
+    app.kubernetes.io/name: dragonfly
+    app.kubernetes.io/part-of: couple-games
+spec:
+  replicas: 1
